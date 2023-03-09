@@ -1,13 +1,21 @@
 body{
 	margin: 0;
 	background-color: #191924;
+  font-family: Arial, Helvetica, sans-serif;
 }
-	/* Container holding the image and the text */
+table{
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+
+}
 }
 .tittleBG {
   position: relative;
   text-align: center;
   color: white;
+
 }
 .tittleBG img {
 	width:100%;
@@ -19,9 +27,13 @@ body{
 .mainTittle {
   position: absolute;
   top: 40%;
-  left: 13%;
+  left: 10%;
   color: white;
-
+   font-family: "Audiowide", sans-serif;
+   font-size: 22px;
+   background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Bottom left text */
@@ -80,9 +92,52 @@ body{
   margin: 20px;
   width: 320px;
 }
+.grid-news-item {
+  float:left;
+  background-color: #1a1919;
+  opacity: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+  background-image: #242424;
+  margin: 7px;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}.grid-news2-item {
+  float:left;
+  background-color: #1a1919;
+  opacity: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+  background-image: #242424;
+  margin: 7px;
+  width: 820px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.grid-news2-item img{
+  flex-basis: 40%;
+  width: 320px;
+  height:200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .grid-item img{
 	width: 100%;
 	opacity: 60%;
+}
+.grid-news-item img{
+	flex-basis: 40%
+	width: 100%;
+	height:120px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.newstext {
+  font-size: 14px;
+  padding-left: 20px;
+  color: white;
 }
 .grid-item b{
 	font-size: 20px;
@@ -101,6 +156,8 @@ body{
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+  top: 0;
+  z-index: 10000;
 }
 
 .footer-distributed .footer-left p {
@@ -182,4 +239,59 @@ body{
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
   }
+}
+
+  .table1{
+    float: left;
+    border: 0px; 
+    background-color:#e6e4d5;
+    position: fixed;
+    padding-bottom: 300px;
+  }
+  .table1 button,.table1 td{
+    width: 220px;
+    height: 5%;
+    padding-left: 10px;
+    text-align: left;
+    background-color: #e6e4d5;
+    border: 0px;
+    color: #9c9b97;
+    font-size: 18pt;
+  }
+
+  .table1 button:hover {background-color:white;
+    color:black;}
+
+  .introduction .goalsAndVission .history .socialMedia{
+    float: right;
+    border: 0px; 
+    background-color: grey;
+    width: 75%;
+  }
+  .introduction img{
+    width: 100%;
+    height: 340px;
+    float: right;
+  }
+  .introduction h3 p{
+    float: right;
+    color: white;
+  }
+  .sidecontent{
+    margin-left: 25%;
+    padding: 20px;
+    background-color: #3c3f45;
+    margin-right: 10px;
+  }
+  .goalsAndVission{
+    width: 100%;
+}
+.goalsAndVission img{
+    width: 100%;
+    height: 140px;
+
+}
+.goalsAndVission h3 p{
+    width: 30%;
+    margin-left: 10px;
 }
